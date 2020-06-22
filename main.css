@@ -1,14 +1,45 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #333333;
+}
+
+* {
+	box-sizing: border-box;
+}
+
 header{
-	margin: 25px 30px 100px 30px;
-	/* Above, right, below, left */
+    padding: 15px 30px;
+    margin-bottom: 100px;
+	background: #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+	height: 50px;
+	width: auto;
+	margin: 0;
+}
+
+a {
+	color: rgb(53,180,120);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 h1{
 	/* color: rgb(123,230,210);  A pretty light aqua green */
-	font-size: 300%;
-	font-family: "Times New Roman";
-	font-style: italic;
-	display: inline;
+	display: block;
+	max-width: 700px;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 30px;
 }
 
 h2{
@@ -16,15 +47,8 @@ h2{
 	top: 100px;
 	left: 0;
 	width: 100%;
-	font-size: 300%;
-	font-family: "Bookman", serif;
 	text-align: center;
 	color: rgb (123, 230, 210);
-}
-
-h1 a{
-	color: rgb(235,138,118);
-	text-decoration: none;
 }
 
 ul.secondary li{
@@ -40,36 +64,34 @@ body{
 }
 
 p{
-        margin-left: auto;
+	margin-left: auto;
 	margin-right: auto;
-	width: 700px;
+	max-width: 700px;
+	width: 90%;
 	float: center;
-	font-size: 115%;
-	font-family: "Calibri";
+	line-height: 1.4;
+}
+
+.grey-box {
+	background: #eeeeee;
+	max-width: 700px;
+	display: block;
+	margin: auto;
+	margin-bottom: 20px;
+	padding: 20px;
+
 }
 
 p.character{
-	margin-left: auto;
-	margin-right:auto;
-	margin-bottom: 80px;
-	width: 700px;
-		float: center;
-	padding: 10px;
-	border: 2px solid rgb(123,230,210);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
+	box-sizing: border-box;
+    background: #eeeeee;
 }
-
-strong{
-	color: rgb(235,138,118);
-}
-
 
 nav{
 	display: inline;
-}
-
-nav ul{
-	display: inline;
-	float:right;
 }
 
 ul li{
@@ -80,23 +102,23 @@ ul li{
 nav ul li a{
 	padding: 6px 14px 6px 14px;
 	/* First refers to vertical placement; second is distance between */
-	font-size: 120%;
-	font-family: "Calibri";
 	color: #888;
 	text-decoration: none;
 }
 
+nav ul li a:hover {
+	text-decoration: none;
+}
+
 .current a{
-	color: black;
-	background:  rgb(123,230,210);
 	border-radius: 10px;
+	color: #333333;
+	font-weight: bold;
 }
 
 ul.secondary li a{
 	padding: 6px 14px 6px 14px;
 	/* First refers to vertical placement; second is distance between */
-	font-size: 120%;
-	font-family: "Calibri";
 	text-decoration: none;
 }
 
@@ -107,8 +129,7 @@ ul.secondary{
 }
 
 .secondary a{
-	color: rgb(113,220,200);;
-	font-size: 120%;
+	color: rgb(113,220,200);
 	text-decoration: none;
 	padding: 5px;
 	border-radius: 10px;
@@ -120,7 +141,8 @@ ul.secondary{
 img{
 	display: block;
 	margin:auto;
-	width:700px;
+	max-width:700px;
+	width: 100%;
 }
 
 /*
@@ -133,4 +155,8 @@ div img{
 	display: block;
 	margin: auto;
 	width: 720px;
+}
+
+.player {
+	padding-bottom: 100px;
 }
