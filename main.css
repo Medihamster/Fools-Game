@@ -94,6 +94,10 @@ nav{
 	display: inline;
 }
 
+ul {
+	padding: 0;
+}
+
 ul li{
 	display: inline-block;
 	list-style-type: none;
@@ -154,7 +158,8 @@ img{
 div img{
 	display: block;
 	margin: auto;
-	width: 720px;
+	width: 100%;
+	max-width: 720px;
 }
 
 .player {
